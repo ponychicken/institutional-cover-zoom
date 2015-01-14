@@ -11,6 +11,9 @@ body {
 	font-family: HelveticaTextbookCom-Roman, HelveticaTextbook-Roman, Helvetica, Arial, sans-serif;
 	height: 100%;
 	text-align: center;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
 }
 
 h1 {
@@ -30,12 +33,15 @@ h1, h2 {
 	justify-content: center;
 	display: flex;
 	flex-direction: column;
+	height: 50vh;
+	box-sizing: border-box;
+	margin: 0;
 }
 
 #flexWrapper {
-	display: flex;
+	/*display: flex;
 	flex-direction: column;
-	justify-self: center;
+	justify-self: center;*/
 	height: 100%;
 }
 
@@ -44,4 +50,57 @@ hr {
 	height: 1px;
 	background-color: black;
 	width: 100%;
+	margin: 0;
+}
+
+
+
+h1 {
+	animation-duration: 10s;
+	animation-name: zoomin;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+h2 {
+	animation-duration: 10s;
+	animation-name: zoomout;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+@keyframes zoomin {
+	from {
+		font-size: 41px;
+	}
+	
+	25% {
+		font-size: 120px;
+	}
+	
+	75% {
+		font-size: 12px;
+	}
+	
+	to {
+		font-size: 41px;
+	}
+}
+
+@keyframes zoomout {
+	from {
+		font-size: 22px;
+	}
+	
+	75% {
+		font-size: 120px;
+	}
+	
+	25% {
+		font-size: 12px;
+	}
+	
+	to {
+		font-size: 22px;
+	}
 }
