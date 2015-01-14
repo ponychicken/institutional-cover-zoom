@@ -50,13 +50,13 @@ hr {
 	border: none;
 	height: 1px;
 	background-color: black;
-	width: 100%;
-	margin: 0;
+	width: 96%;
+	margin: 0 2%;
 }
 
 h1 {
 	width: 300%;
-margin-left: -100%;
+	margin-left: -100%;
 }
 
 h1 {
@@ -79,7 +79,7 @@ h2 {
 	}
 	
 	to {
-		font-size: 300px;
+		font-size: 350px;
 	}
 
 }
